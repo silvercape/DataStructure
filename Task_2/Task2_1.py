@@ -7,3 +7,4 @@ while(1):
         print("Try again")
         a = input("Please input a number!\n")
 print("now next game!")
+print("1")
