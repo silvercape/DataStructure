@@ -4,9 +4,8 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "cpp - 生成和调试活动文件",
+            "name": "gcc-10 - 生成和调试活动文件",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -23,7 +22,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: cpp 生成活动文件",
+            "preLaunchTask": "C/C++: gcc-10 生成活动文件",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
