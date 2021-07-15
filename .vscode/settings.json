@@ -1,0 +1,6 @@
+{
+    "code-runner.runInTerminal": true,
+    "java.classPath": [
+        "/usr/local/algs4/algs4.jar"
+    ]
+}

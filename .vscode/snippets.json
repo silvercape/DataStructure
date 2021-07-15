@@ -1,0 +1,11 @@
+{
+    "main": {
+        "prefix": "main",
+        "body": "main"
+    },
+    "out":{
+        "prefix":"out",
+        "body":"System.out.println(\"${1:x}\")$0"
+    },
+    
+}
