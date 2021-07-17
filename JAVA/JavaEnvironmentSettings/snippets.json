@@ -1,0 +1,80 @@
+{
+	
+    "stdout":{
+        "prefix":"out",
+        "body":"StdOut.println(\"${1:x}\");$0"
+    },
+	"main":{
+		"prefix": "main",
+		"body": "public static void main(String[] args) {\n\t$0\n}"
+	},
+	"Scanner":{
+		"prefix": "in",
+		"body": "int n = StdIn.readInt();"
+	},
+	"Import Scanner":{
+		"prefix": "imin",
+		"body": "import java.util.Scanner;"
+	},
+	"voidfunc":{
+		"prefix": "voidfunc",
+		"body": "public static void ${1:func}(${2:parameter}) {\n\t$0\n}"
+	},
+	"func":{
+		"prefix": "func",
+		"body": "public static ${1:void} ${2:func}(${3:parameter}) {\n\t$0\n}"
+	},
+	"file_init_1":{
+		"prefix": "java",
+		"body": "public class ${TM_FILENAME/(.*)\\.java$/${1}/i} {\n\t${0:/* Write Your Code Here! */}\n}"
+	},
+	"flie_init_2":{
+		"prefix": ["1java", "2java"],
+		"body": "public class ${1:${TM_FILENAME/(.*)\\.java$/${1}/i}} {\n\t${0:/* Write Your Code Here! */}\n}"
+	},
+	"file_init_3":{
+		"prefix": "mjava",
+		"body": "public class ${TM_FILENAME/(.*)\\.java$/${1}/i} {\n\tpublic static void main(String[] args) {\n\t\t$0\n\t}\n}"
+	},
+	"test_java":{
+		"prefix": "test_java",
+		"body": ["import edu.princeton.cs.algs4.StdDraw;",
+				"import edu.princeton.cs.algs4.In;",
+				"import edu.princeton.cs.algs4.StdIn;",
+				"import edu.princeton.cs.algs4.StdOut;\n\n",
+				"public class ${TM_FILENAME/(.*)\\.java$/${1}/i} {\n\tpublic static void main(String[] args) {\n\t\t$0\n\t}\n}"
+		]
+	},
+	"algs4_import":{
+		"prefix": "import_algs",
+		"body": [
+				"import edu.princeton.cs.algs4.StdDraw;",
+				"import edu.princeton.cs.algs4.In;",
+				"import edu.princeton.cs.algs4.StdIn;",
+				"import edu.princeton.cs.algs4.StdOut;\n\n"
+		]
+	},
+	"PS":{
+		"prefix": ["PS", "ps"],
+		"body": [
+			"/******************************************************************************",
+			"*  Name:    Silver",
+			"*  NetID:   199211",
+			"*  Precept: P03A",
+			"*",
+			"*  Description:  Creat a ${TM_FILENAME/(.*)\\.java$/${1}/i} class.",
+			"*                Silver initiated this tradition in 2021.",
+			"*",
+			"*  Written:       17/07/2021",
+			"*  Last updated:  17/07/2021",
+			"*",
+			"*  % javac-algs4 NewtonSqrt.java",
+			"*  % java-algs4 NewtonSqrt < Input.txt",
+			"*      Please enter a number:",
+			"*      Now you input 4.0",
+			"*      And sqrt(4.0) is 2.0",
+			"*  ",
+			"******************************************************************************/"
+		]
+	}
+}

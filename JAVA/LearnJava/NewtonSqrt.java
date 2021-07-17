@@ -1,4 +1,21 @@
-import java.lang.Math;
+/******************************************************************************
+ *  Name:    Silver
+ *  NetID:   199211
+ *  Precept: P03A
+ *
+ *  Description:  Creat a NewtonSqrt class.
+ *                Silver initiated this tradition in 2021.
+ *
+ *  Written:       17/07/2021
+ *  Last updated:  17/07/2021
+ *
+ *  % javac-algs4 NewtonSqrt.java
+ *  % java-algs4 NewtonSqrt < Input.txt
+ *      Please enter a number:
+ *      Now you input 4.0
+ *      And sqrt(4.0) is 2.0
+ *      
+ ******************************************************************************/
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -19,3 +36,4 @@ public class NewtonSqrt {
         return t;
     }
 }
+
