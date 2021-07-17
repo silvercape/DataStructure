@@ -112,4 +112,4 @@ TreeNode* buildTree(vector<TreeNode *> &v) {
 
 ```
 
-It seems to be  success!
+It seems to be a success!
